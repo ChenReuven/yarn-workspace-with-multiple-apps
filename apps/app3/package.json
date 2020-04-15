@@ -1,0 +1,11 @@
+{
+  "name": "app3",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npx node index.js"
+  },
+  "dependencies": {
+    "cross-env": "5.0.5",
+    "express": "4.15.0"
+  }
+}

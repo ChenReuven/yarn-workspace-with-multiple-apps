@@ -1,0 +1,6 @@
+# Project exclude paths
+/apps/app1/node_modules/
+/apps/app2/node_modules/
+/apps/app3/node_modules/
+/apps/bootstrap/node_modules/
+/node_modules/

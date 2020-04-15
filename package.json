@@ -1,0 +1,22 @@
+{
+  "name": "yarn-workspace-multiple-apps",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "serve:react": "yarn workspace react-app start",
+    "serve:angular": "yarn workspace angular-app start",
+    "serve:vue": "yarn workspace vue-app serve:cors",
+    "serve:bootstrap": "yarn workspace bootstrap start",
+    "build:bootstrap": "yarn workspace bootstrap build",
+    "start": "concurrently \"yarn build:bootstrap\" \"yarn serve:bootstrap\" \"yarn serve:react\"  \"yarn serve:angular\" \"yarn serve:vue\""
+  },
+  "dependencies": {
+    "concurrently": "^5.1.0",
+    "webpack-dev-server": "^3.1.11"
+  }
+}

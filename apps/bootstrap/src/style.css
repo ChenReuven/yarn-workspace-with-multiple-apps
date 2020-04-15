@@ -1,0 +1,13 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+fronty-app {
+  width: 100%;
+}
+
+fronty-app iframe {
+  height: 600px;
+}
